@@ -12,7 +12,7 @@ interface Props {
 }
 const NavLink = ({ to, children, isSelected }: Props) => (
     <Link
-        className={`block hover:bg-neutral-100 p-2 mx-4 rounded-lg ${isSelected && primaryVariant} transition cursor-pointer`}
+        className={`block hover:bg-sky-100 py-1 px-2 mx-4 rounded-lg ${isSelected && primaryVariant} transition cursor-pointer`}
         activeClass="active"
         smooth
         spy
@@ -26,14 +26,11 @@ export const NavBar = () => {
     const [isVisible, setVisibility] = useState(false);
     const toggleVisibility = () => setVisibility(!isVisible);
     return (
-        <nav
-            className={`sticky w-full transition-all ease-in-out p-4 flex justify-between ${background}`}
-            style={{ backdropFilter: 'blur(20px)' }}
-        >
+        <nav className={`sticky w-full top-0 p-4 flex justify-between ${background}`}>
             <p>Shivam</p>
-            <div>
+            <div className="text-center ">
                 <div
-                    className={`md:hidden cursor-pointer`}
+                    className={`md:hidden cursor-pointer flex justify-end top-0 z-40 w-full `}
                     onClick={(_e) => {
                         toggleVisibility();
                     }}
@@ -41,13 +38,13 @@ export const NavBar = () => {
                 >
                     {isVisible ? <AiOutlineClose size={24} /> : <HiMenu size={24} />}
                 </div>
-                <ul className="md:flex">
-                    <NavLink to="about" isSelected={true}>Home</NavLink>
+                <ul className={`md:flex transition-all ease-in-out ${!isVisible ? 'h-0' : 'h-64'} md:h-min overflow-hidden`}>
+                    <NavLink to="home" isSelected={true}>Home</NavLink>
                     <NavLink to="about" isSelected={false}>About</NavLink>
-                    <NavLink to="about" isSelected={false}>Projects</NavLink>
-                    <NavLink to="about" isSelected={false}>Experience</NavLink>
-                    <NavLink to="about" isSelected={false}>Education</NavLink>
-                    <NavLink to="about" isSelected={false}>Contact</NavLink>
+                    <NavLink to="projects" isSelected={false}>Projects</NavLink>
+                    <NavLink to="experience" isSelected={false}>Experience</NavLink>
+                    <NavLink to="education" isSelected={false}>Education</NavLink>
+                    <NavLink to="contact" isSelected={false}>Contact</NavLink>
                 </ul>
             </div>
         </nav>
