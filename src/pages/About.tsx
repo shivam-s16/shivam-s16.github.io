@@ -1,11 +1,10 @@
-import me from '../assets/me.jpg'
 import { background, primaryText } from '../theme/Colors'
 
 export const About = () => {
     return (
         <section className={`py-16 flex flex-col md:flex-row md:justify-evenly items-center ${background}`} id="about">
             <div className='w-3/4 md:w-1/4'>
-                <img className='rounded-full md:rounded-3xl' src={me} />
+                <img className='rounded-full md:rounded-3xl' src='me.jpg' />
 
             </div>
             <div className='text-center md:text-left md:w-1/2'>

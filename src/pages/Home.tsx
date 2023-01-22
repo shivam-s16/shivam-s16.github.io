@@ -1,4 +1,3 @@
-import dataScientist from '../assets/data_scientist.svg'
 import { primaryText, primaryVariant, textColor } from '../theme/Colors'
 
 
@@ -13,7 +12,7 @@ export const Home = () => {
             </div>
 
             <div className="my-24 w-1/2 md:w-2/6">
-                <img src={dataScientist} alt="" />
+                <img src='data_scientist.svg' alt="" />
             </div>
         </section>
     )
