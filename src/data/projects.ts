@@ -8,12 +8,12 @@ export type Project = {
 
 export const myProjects: Project[] = [
     {
-        title: 'WallpaperX',
-        time: 'Oct-Dec, 2021',
-        desc: 'A simple wallpaper application. WallpaperX brings',
+        title: 'Algopylib',
+        time: 'May-June, 2021',
+        desc: 'A basic Python library that has modules for math functions, algorithms, and puzzles.',
         image:
             'https://raw.githubusercontent.com/divyansh-dxn/WallpaperX/master/assets/samples/preview_all.jpeg',
-        projectUrl: 'https://github.com/divyansh-dxn/WallpaperX',
+        projectUrl: 'https://pypi.org/project/Algopylib/',
     },
 
     {
