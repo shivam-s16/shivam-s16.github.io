@@ -18,7 +18,7 @@ export const Contact = () => {
         </div>
         <div className="md:text-left">
           <p className="font-semibold">Email:</p>
-          <p>saxenashivam541@gmail.com</p>
+          <p>saxenashivam451@gmail.com</p>
           <p className=" font-semibold">Mobile:</p>
           <p>+91-6232703705</p>
         </div>
