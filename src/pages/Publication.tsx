@@ -1,24 +1,26 @@
-import { ExperienceCard } from '../components/ExperienceCard';
+import { PublicationCard } from '../components/ExperienceCard';
 import { experienceList } from '../data/Experience';
+import { PublicationList } from '../data/Publication';
 import { background, primaryText } from '../theme/Colors';
 
-export const Experience = () => {
+
+export const Publication = () => {
   return (
     <section
       className={`${background} text-center py-16 md:py-24`}
       id="experience"
     >
-      <p className={`text-4xl font-semibold ${primaryText}`}>Experience</p>
+      <p className={`text-4xl font-semibold ${primaryText}`}>Publications</p>
       <div className="mt-8 md:mt-16 px-8 md:px-16">
-        {experienceList.map((experience, index) => {
+        {PublicationList.map((publication, index) => {
           return (
             <>
-              <ExperienceCard
+              <PublicationCard
                 key={index}
-                time={experience.time}
-                role={experience.role}
-                organization={experience.organization}
-                description={experience.description}
+                      time={publication.time}
+                      title={publication.title}
+                      subtitle={publication.subtitle}
+                description={publication.description}
                 url={''}
               />
               <div className="h-16"></div>
