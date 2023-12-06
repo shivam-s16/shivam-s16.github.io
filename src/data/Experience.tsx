@@ -8,7 +8,15 @@ export interface Experience {
 
 export const experienceList: Experience[] = [
   {
-    time: 'October 2022 – Present',
+    time: 'April 2023 – Sept 2023',
+    role: 'Data Scientist',
+    organization: 'Karya',
+    description:
+      'Work on data processing and its pipelines, quality estimation, troubleshooting data quality issues,cleaning, and formatting of crowdsourced datasets. \n Building assistive tools for crowd source workers with deep learning model',
+    url: 'http://127.0.0.1:5173/',
+  },
+  {
+    time: 'October 2022 – May 2023',
     role: 'Data Scientist and Subject Matter Expert(NLP)',
     organization: 'Scaler(InterviewBit)',
     description:

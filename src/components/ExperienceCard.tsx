@@ -1,4 +1,5 @@
 import { Education, isEducation } from '../data/Education';
+import { Publication } from '../data/Publication';
 import { Experience } from '../data/Experience';
 import { background, primaryText, primaryVariant } from '../theme/Colors';
 
@@ -61,6 +62,19 @@ export const EducationCard = (education: Education) => {
     />
   );
 };
+export const PublicationCard = (publication: Publication) => {
+  return (
+    <Card
+      className={`${background}`}
+      time={publication.time}
+      title={publication.title}
+      subtitle={publication.subtitle}
+      description={publication.description}
+      url={publication.url}
+    />
+  );
+};
+
 
 export const ExperienceCard = (experience: Experience) => {
   return (

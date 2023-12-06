@@ -14,7 +14,7 @@ export const Home = () => {
           data, recognize patterns, and make intelligent decisions.
         </p>
         <a
-          href="https://drive.google.com/drive/folders/1czyAW3AS472g0p7FLVIfzpKZbBCBkY7A"
+          href="https://drive.google.com/drive/folders/1k6MY9Df-5ua6KJWr1n82K-a_yahlcvYi?usp=drive_link"
           target={`_blank`}
           rel="nonreferrer"
         >
